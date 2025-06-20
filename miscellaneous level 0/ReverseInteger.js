@@ -7,12 +7,12 @@ function ReverseInteger(num) {
     rev = rev * 10 + rem;
     num = Math.floor(num / 10);
   }
-  //   return (numCopy < 0) ? -rev : rev;
-  if (numCopy < 0) {
-    return -rev;
-  } else {
-    return rev;
-  }
+    return (numCopy < 0) ? -rev : rev;
+//   if (numCopy < 0) {
+//     return -rev;
+//   } else {
+//     return rev;
+//   }
 }
 
 const result = ReverseInteger(-4538768);
