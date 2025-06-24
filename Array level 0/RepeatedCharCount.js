@@ -3,6 +3,7 @@ function RepeatedCharCount(input) {
 
   for (let i = 0; i < input.length; i++) {
     const char = input[i];
+    console.log(char, "char")
 
     if (occurance[char]) {
       occurance[char]++;
