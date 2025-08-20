@@ -9,6 +9,8 @@ const RepeatElements = (arr) => {
       occurance[char] = 1;
     }
   }
+  // Object.key() will return an array of keys 
+  
   let result = Object.keys(occurance).filter((char) => occurance[char] === 2);
   return result.length > 0
     ? result

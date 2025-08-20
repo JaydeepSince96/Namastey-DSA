@@ -20,5 +20,28 @@ function SecondLargestNumInArr(arr){
     return secondLargest;
 }
 
-const result = SecondLargestNumInArr(arr)
+const result1 = SecondLargestNumInArr(arr)
 console.log(result)
+
+
+// =============================== Second Solution ===========================================
+
+function SecondLargestNum(num){
+    let firstLargestNum = -Infinity
+    let secondLargestNum = -Infinity
+    for(let i=0;i<num.length;i++){
+        if(num[i]> firstLargestNum){
+            secondLargestNum = firstLargestNum
+            firstLargestNum = num[i];
+        }
+    }
+    return secondLargestNum;
+}
+
+const result2 = SecondLargestNum([1,23,15,55, 71, 89, 98124287])
+console.log(result2)
+
+
+// *** Concept
+// We assume two vaules FirstLargestNum and SecondLargestNum at lowest value -Infinity so that we can assign greater values into it. but the question is how we do figureout the secondLargest ? 
+// If we iterate elements and check the first Largest value Cann't the firstLargest first value doesn't become the second lagrgest value !!?

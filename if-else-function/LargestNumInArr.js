@@ -12,3 +12,6 @@ function LargestNumInArr(arr) {
 
 const result = LargestNumInArr(arr)
 console.log(result)
+
+
+// First we assign smallest number is a Largest Number in Js, -Infinity is the smallest number and we compare it from other elements.
