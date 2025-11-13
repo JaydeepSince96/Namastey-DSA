@@ -23,6 +23,6 @@
 
 
 // 2) This is how you can define the same in the arrow function.
-const getLength = <T extends {len:number}>(value:T): number=>{
-  return value.len
-}
+// const getLength = <T extends {len:number}>(value:T): number=>{
+//   return value.len
+// }
