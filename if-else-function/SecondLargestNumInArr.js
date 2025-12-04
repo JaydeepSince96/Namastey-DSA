@@ -5,22 +5,23 @@ let arr = [4,9,0,2,8,7,1]
 // }
 
 function SecondLargestNumInArr(arr){
+    if(arr.length < 2) return null
     let firstLargest = -Infinity
     let secondLargest = -Infinity
     for(let i=0;i<arr.length;i++){
-        if(arr[i]>firstLargest){
+        if(arr[i]>firstLargest){          // If I got firstLargetst then it previous value must be the second largest 
             secondLargest = firstLargest
             firstLargest = arr[i]
             
         }
-        else if(arr[i]>secondLargest){
+        else if(arr[i]>secondLargest && arr[i] !== firstLargest){ // ANd then check if array have greater value then the second Largest element then update Then and condition if for checking the duplicate
             secondLargest = arr[i]
         }
     }
     return secondLargest;
 }
 
-const result1 = SecondLargestNumInArr(arr)
+const result = SecondLargestNumInArr(arr)
 console.log(result)
 
 
